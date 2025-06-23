@@ -33,9 +33,8 @@ Meu objetivo foi criar **um site educacional completo**, bonito e com interativi
 ## 🔗 Acesse o projeto
 
 Você pode visualizar o projeto publicado aqui:  
-👉 [Ver página online](https://SEU_USUARIO.github.io/NOME_DO_REPOSITORIO)
+👉 [Ver página online](https://github.com/sohgottes)
 
-> Substitua com seu link real após publicar no GitHub Pages.
 
 ## 🛠 Tecnologias Utilizadas
 
