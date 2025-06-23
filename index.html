@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Jornada com HTML</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f0f0, #e0f7fa);
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #004d40;
+    }
+    mark {
+      background-color: #ffeb3b;
+    }
+    blockquote {
+      border-left: 5px solid #00796b;
+      padding-left: 15px;
+      font-style: italic;
+      background-color: #f1f1f1;
+    }
+    a {
+      color: #00695c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul, ol {
+      padding-left: 40px;
+    }
+    nav {
+      background-color: #e0f2f1;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 5px solid #00796b;
+      border-radius: 8px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    nav ul li {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      transition: 0.3s;
+      flex: 0 1 auto;
+    }
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      color: #004d40;
+      white-space: nowrap;
+    }
+    nav ul li:hover {
+      background-color: #b2dfdb;
+    }
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00796b;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    .link-dio {
+      display: inline-block;
+      background-color: #00bfa5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    .link-dio:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Jornada de HTML com a DIO</h1>
+    <p><strong>Explorando todas as tags, conceitos e práticas essenciais para dominar a estrutura da web</strong></p>
+  </header>
+
+  <nav>
+    <h2>Índice de Conteúdo</h2>
+    <ul>
+      <li><a href="#html">O que é HTML?</a></li>
+      <li><a href="#semantica">Tags Semânticas</a></li>
+      <li><a href="#titulos">Títulos Hierárquicos</a></li>
+      <li><a href="#formatacoes">Formatações de Texto</a></li>
+      <li><a href="#citacao">Citação Inspiradora</a></li>
+      <li><a href="#links">Links e Fontes</a></li>
+      <li><a href="#dicas">Dicas Finais</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="html">
+      <h2>O que é HTML?</h2>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> Linguagem de Marcação de Hipertexto) é a base da construção de qualquer site. Ele define a estrutura de uma página da web utilizando elementos chamados "tags". Essas tags são usadas para criar títulos, parágrafos, listas, links, imagens e outros elementos visuais e estruturais.</p>
+            <p>HTML não é uma linguagem de programação, pois não possui lógica ou variáveis. Seu principal propósito é organizar e estruturar o conteúdo de forma semântica, permitindo que navegadores e leitores de tela interpretem corretamente a informação.</p>
+            <p>Combinado com CSS (folhas de estilo) e JavaScript (interatividade), o HTML se torna ainda mais poderoso para o desenvolvimento web.</p>
+    </section>
+
+    <section id="semantica">
+      <h2>Tags Semânticas</h2>
+      <p>Tags semânticas são aquelas que descrevem claramente o significado do conteúdo nelas contido, tanto para o navegador quanto para o desenvolvedor. Exemplos incluem <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;aside&gt;</code>.</p>
+      <ul>
+        <li><strong>&lt;main&gt;</strong>: Delimita o conteúdo principal da página.</li>
+        <li><strong>&lt;section&gt;</strong>: Agrupa conteúdos relacionados, como capítulos ou seções.</li>
+        <li><strong>&lt;article&gt;</strong>: Representa uma composição independente, como postagens ou artigos.</li>
+        <li><strong>&lt;aside&gt;</strong>: Usado para conteúdo complementar, como barras laterais.</li>
+      </ul>
+    </section>
+
+    <section id="titulos">
+      <h2>Títulos Hierárquicos</h2>
+      <ol>
+        <li><h1>Título principal da página</h1></li>
+        <li><h2>Subtítulo ou seção</h2></li>
+        <li><h3>Subseção de h2</h3></li>
+        <li><h4>Detalhamento de h3</h4></li>
+        <li><h5>Níveis adicionais</h5></li>
+        <li><h6>Notas ou informações de menor importância</h6></li>
+      </ol>
+    </section>
+
+    <section id="formatacoes">
+      <h2>Formatações de Texto</h2>
+      <ul>
+        <li><strong>&lt;strong&gt;</strong>: <strong>Dá ênfase em negrito</strong></li>
+        <li><i>&lt;i&gt;</i>: <i>Itálico</i></li>
+        <li><u>&lt;u&gt;</u>: <u>Sublinhado</u></li>
+        <li><mark>&lt;mark&gt;</mark>: <mark>Texto destacado</mark></li>
+        <li><small>&lt;small&gt;</small>: <small>Texto menor</small></li>
+        <li><del>&lt;del&gt;</del>: <del>Texto riscado</del></li>
+        <li><sub>&lt;sub&gt;</sub>: Subscrito, ex: H<sub>2</sub>O</li>
+        <li><sup>&lt;sup&gt;</sup>: Sobrescrito, ex: x<sup>2</sup></li>
+        <li><abbr title="Organização das Nações Unidas">ONU</abbr>: Usando <code>&lt;abbr&gt;</code></li>
+        <li><font color="red">Texto com a tag obsoleta &lt;font&gt;</font></li>
+      </ul>
+    </section>
+
+    <section id="citacao">
+      <h2>Citação Inspiradora</h2>
+      <blockquote>
+        "Escrever HTML é como construir a estrutura de uma casa: cada elemento tem seu lugar e propósito."
+      </blockquote>
+    </section>
+
+    <section id="links">
+      <h2>Links e Fontes</h2>
+      <p>Usamos a tag <code>&lt;a&gt;</code> para criar hiperlinks. Ela pode apontar para sites externos ou âncoras internas da própria página.</p>
+      <p>Exemplo: <a href="#html">Voltar para a introdução do HTML</a></p>
+      <p>A tag <code>&lt;font&gt;</code>, embora usada no passado para estilizar textos, foi substituída pelo CSS moderno.</p>
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas Finais</h2>
+      <ul>
+        <li>Organize seu código com indentação consistente.</li>
+        <li>Use tags semânticas para dar clareza ao seu HTML.</li>
+        <li>Comente o código para facilitar a manutenção e entendimento.</li>
+        <li>Evite usar tags obsoletas como <code>&lt;font&gt;</code> em projetos reais.</li>
+        <li>Pratique muito e experimente criar páginas reais para fixar o conteúdo.</li>
+      </ul>
+      <p><strong>Fontes consultadas:</strong></p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+        <li><a href="https://htmlreference.io/" target="_blank">HTML Reference</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>Desenvolvido por Guilherme Moura | Projeto do Curso de HTML</small></p>
+    <a class="link-dio" href="https://www.dio.me/" target="_blank">Acesse a plataforma da DIO</a>
+  </footer>
+
+  <button id="back-to-top" onclick="scrollToTop()" title="Voltar ao topo">↑</button>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
